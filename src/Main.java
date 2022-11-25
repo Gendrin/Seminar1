@@ -37,5 +37,23 @@ public class Main {
         }
     }
 
+    class Task4 {
+        public String reverseWords(String s) {
+            StringBuilder reversed = new StringBuilder(s.length());
+            char[] chars = s.toCharArray();
+            int end = chars.length;
+            for (int start = chars.length - 1; start >= 0; start--) {
+                if (chars[start] == ' ') {
+                    end = start;
+                } else if (start == 0 || chars[start - 1] == ' ') {
+                    if (reversed.length() > 0) {
+                        reversed.append(' ');
+                    }
+                    reversed.append(chars, start, end - start);
+                }
+            }
+            return reversed.toString();
+        }
+    }
 
 }
