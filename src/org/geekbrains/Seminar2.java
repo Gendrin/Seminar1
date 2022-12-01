@@ -87,6 +87,13 @@ public class Seminar2 {
    root3.val=3;
         System.out.println("Insert TreeNode: 3");
         System.out.println("Result Tree: " + binaryTreePaths(root3));
+
+//-------------------Task4 -----------------------------------------------------
+  System.out.println("Insert TreeNode Task4 - root1: 1,2,3,null,5  & root2 : 7,6,3,4,null,2");
+        System.out.println("Result check: " + isSameTree(root1,root2));
+
+  System.out.println("Insert TreeNode Task4 - root3: 3  & root3 : 3");
+        System.out.println("Result check: " + isSameTree(root3,root3));
     }
 
     //Task1
